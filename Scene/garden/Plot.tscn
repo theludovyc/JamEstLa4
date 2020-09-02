@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://ressources/sprites/garden/dirt.png" type="Texture" id=1]
-[ext_resource path="res://Script/garden/Dirt.gd" type="Script" id=2]
+[ext_resource path="res://Script/garden/Plot.gd" type="Script" id=2]
 [ext_resource path="res://ressources/sprites/garden/effect_sprinkle.png" type="Texture" id=3]
 [ext_resource path="res://ressources/sprites/garden/effect_seeded.png" type="Texture" id=4]
 
@@ -35,5 +35,5 @@ __meta__ = {
 }
 
 [node name="Evaporation" type="Timer" parent="."]
-[connection signal="pressed" from="PlotBtn" to="." method="action_used"]
+[connection signal="button_down" from="PlotBtn" to="." method="watering"]
 [connection signal="timeout" from="Evaporation" to="." method="evaporation"]

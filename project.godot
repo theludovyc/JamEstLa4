@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "Plot",
 "language": "GDScript",
-"path": "res://Script/garden/Dirt.gd"
+"path": "res://Script/garden/Plot.gd"
 }, {
 "base": "Resource",
 "class": "Seed",

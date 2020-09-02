@@ -1,13 +1,15 @@
 extends Node2D
 
+export (int, 1, 99999999) var EvaporationTime = 600
+
 onready var Interface = $Interface
 
-export (int, 1, 99999999) var EvaporationTime = 20
+var plot_obj = preload("res://Scene/garden/Plot.tscn")
 
 var current_action: String = ""
 
-var max_water: int = 15
-var water: int = 10
+var max_water: int = 50
+var water: int = 50
 
 
 func _ready():

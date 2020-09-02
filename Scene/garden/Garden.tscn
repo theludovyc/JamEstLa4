@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://Scene/garden/Dirt.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scene/garden/Plot.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ressources/sprites/garden/grass.png" type="Texture" id=2]
 [ext_resource path="res://ressources/sprites/garden/icons/watering_can.png" type="Texture" id=3]
 [ext_resource path="res://ressources/sprites/garden/button.png" type="Texture" id=4]
@@ -116,39 +116,255 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0, 65550, 0, 0, 65551, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 0, 0, 131087, 0, 0, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 0, 0, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 0, 262150, 0, 0, 262151, 0, 0, 262152, 0, 0, 262153, 0, 0, 262154, 0, 0, 262155, 0, 0, 262156, 0, 0, 262157, 0, 0, 262158, 0, 0, 262159, 0, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 0, 0, 327688, 0, 0, 327689, 0, 0, 327690, 0, 0, 327691, 0, 0, 327692, 0, 0, 327693, 0, 0, 327694, 0, 0, 327695, 0, 0, 393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 0, 0, 458752, 0, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 0, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0 )
 
-[node name="Dirt_1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 36, 45 )
+[node name="Plot" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 19 )
 
-[node name="Dirt_2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 54, 45 )
+[node name="Plot2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 19 )
 
-[node name="Dirt_3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 72, 45 )
+[node name="Plot3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 19 )
 
-[node name="Dirt_4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 90, 45 )
+[node name="Plot4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 19 )
 
-[node name="Dirt_5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 36, 63 )
+[node name="Plot5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 19 )
 
-[node name="Dirt_6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 54, 63 )
+[node name="Plot6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 19 )
 
-[node name="Dirt_7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 72, 63 )
+[node name="Plot7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 19 )
 
-[node name="Dirt_8" parent="." instance=ExtResource( 1 )]
-position = Vector2( 90, 63 )
+[node name="Plot8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 19 )
 
-[node name="Dirt_9" parent="." instance=ExtResource( 1 )]
-position = Vector2( 36, 81 )
+[node name="Plot9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 19 )
 
-[node name="Dirt_10" parent="." instance=ExtResource( 1 )]
-position = Vector2( 54, 81 )
+[node name="Plot10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 19 )
 
-[node name="Dirt_11" parent="." instance=ExtResource( 1 )]
-position = Vector2( 72, 81 )
+[node name="Plot11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 19 )
 
-[node name="Dirt_12" parent="." instance=ExtResource( 1 )]
-position = Vector2( 90, 81 )
+[node name="Plot12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 19 )
+
+[node name="Plot13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 37 )
+
+[node name="Plot14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 37 )
+
+[node name="Plot15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 37 )
+
+[node name="Plot16" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 37 )
+
+[node name="Plot17" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 37 )
+
+[node name="Plot18" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 37 )
+
+[node name="Plot19" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 37 )
+
+[node name="Plot20" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 37 )
+
+[node name="Plot21" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 37 )
+
+[node name="Plot22" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 37 )
+
+[node name="Plot23" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 37 )
+
+[node name="Plot24" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 37 )
+
+[node name="Plot25" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 55 )
+
+[node name="Plot26" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 55 )
+
+[node name="Plot27" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 55 )
+
+[node name="Plot28" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 55 )
+
+[node name="Plot29" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 55 )
+
+[node name="Plot30" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 55 )
+
+[node name="Plot31" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 55 )
+
+[node name="Plot32" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 55 )
+
+[node name="Plot33" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 55 )
+
+[node name="Plot34" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 55 )
+
+[node name="Plot35" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 55 )
+
+[node name="Plot36" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 55 )
+
+[node name="Plot37" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 73 )
+
+[node name="Plot38" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 73 )
+
+[node name="Plot39" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 73 )
+
+[node name="Plot40" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 73 )
+
+[node name="Plot41" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 73 )
+
+[node name="Plot42" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 73 )
+
+[node name="Plot43" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 73 )
+
+[node name="Plot44" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 73 )
+
+[node name="Plot45" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 73 )
+
+[node name="Plot46" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 73 )
+
+[node name="Plot47" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 73 )
+
+[node name="Plot48" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 73 )
+
+[node name="Plot49" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 91 )
+
+[node name="Plot50" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 91 )
+
+[node name="Plot51" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 91 )
+
+[node name="Plot52" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 91 )
+
+[node name="Plot53" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 91 )
+
+[node name="Plot54" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 91 )
+
+[node name="Plot55" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 91 )
+
+[node name="Plot56" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 91 )
+
+[node name="Plot57" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 91 )
+
+[node name="Plot58" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 91 )
+
+[node name="Plot59" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 91 )
+
+[node name="Plot60" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 91 )
+
+[node name="Plot61" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 109 )
+
+[node name="Plot62" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 109 )
+
+[node name="Plot63" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 109 )
+
+[node name="Plot64" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 109 )
+
+[node name="Plot65" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 109 )
+
+[node name="Plot66" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 109 )
+
+[node name="Plot67" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 109 )
+
+[node name="Plot68" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 109 )
+
+[node name="Plot69" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 109 )
+
+[node name="Plot70" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 109 )
+
+[node name="Plot71" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 109 )
+
+[node name="Plot72" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 109 )
+
+[node name="Plot73" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21, 127 )
+
+[node name="Plot74" parent="." instance=ExtResource( 1 )]
+position = Vector2( 39, 127 )
+
+[node name="Plot75" parent="." instance=ExtResource( 1 )]
+position = Vector2( 57, 127 )
+
+[node name="Plot76" parent="." instance=ExtResource( 1 )]
+position = Vector2( 75, 127 )
+
+[node name="Plot77" parent="." instance=ExtResource( 1 )]
+position = Vector2( 93, 127 )
+
+[node name="Plot78" parent="." instance=ExtResource( 1 )]
+position = Vector2( 111, 127 )
+
+[node name="Plot79" parent="." instance=ExtResource( 1 )]
+position = Vector2( 129, 127 )
+
+[node name="Plot80" parent="." instance=ExtResource( 1 )]
+position = Vector2( 147, 127 )
+
+[node name="Plot81" parent="." instance=ExtResource( 1 )]
+position = Vector2( 165, 127 )
+
+[node name="Plot82" parent="." instance=ExtResource( 1 )]
+position = Vector2( 183, 127 )
+
+[node name="Plot83" parent="." instance=ExtResource( 1 )]
+position = Vector2( 201, 127 )
+
+[node name="Plot84" parent="." instance=ExtResource( 1 )]
+position = Vector2( 219, 127 )
 [connection signal="pressed" from="Interface/WaterinCanBtn" to="." method="wateringcan_mode"]
