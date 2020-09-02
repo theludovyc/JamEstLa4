@@ -33,4 +33,7 @@ flat = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Evaporation" type="Timer" parent="."]
 [connection signal="pressed" from="PlotBtn" to="." method="action_used"]
+[connection signal="timeout" from="Evaporation" to="." method="evaporation"]

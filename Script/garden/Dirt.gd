@@ -1,4 +1,5 @@
 extends Node2D
+class_name Plot
 
 onready var Effect_Watered = $Effects/Sprinkled
 onready var Effect_Seeded = $Effects/Sprinkled
@@ -22,6 +23,12 @@ func action_used():
 
 func watering():
 	if Garden.water > 0 && ! has_water:
+		$Evaporation.start()
 		Garden.water -= 1
 		Effect_Watered.visible = true
 		has_water = true
+
+
+func evaporation():
+	has_water = false
+	Effect_Watered.visible = false
