@@ -7,20 +7,12 @@ class_name Entity
 
 const MAX = 100.0
 
-var hunger:float
+var hunger: float
 
-var thirst:float
+var thirst: float
 
-var fatigue:float
+var fatigue: float
 
-var hygiene:float
+var hygiene: float
 
-var happiness:float
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+var happiness: float
