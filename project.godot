@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Resource",
+"class": "Action",
+"language": "GDScript",
+"path": "res://Script/Action.gd"
+}, {
 "base": "Node2D",
 "class": "Entity",
 "language": "GDScript",
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://Script/Item.gd"
 } ]
 _global_script_class_icons={
+"Action": "",
 "Entity": "",
 "Food": "",
 "Item": ""

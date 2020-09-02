@@ -17,13 +17,44 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="SelectFood" type="Button" parent="."]
+margin_left = 20.1299
+margin_top = 56.1515
+margin_right = 106.13
+margin_bottom = 76.1515
+text = "Select Food"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="GiveFood" type="Button" parent="."]
-margin_left = 15.892
-margin_top = 59.3299
-margin_right = 91.892
-margin_bottom = 79.3299
+margin_left = 127.136
+margin_top = 54.0326
+margin_right = 203.136
+margin_bottom = 74.0326
 text = "Give Food"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="FatigueBar" type="ProgressBar" parent="."]
+margin_left = 19.0
+margin_top = 111.0
+margin_right = 245.0
+margin_bottom = 125.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MakeAction" type="Button" parent="."]
+margin_left = 19.0
+margin_top = 152.0
+margin_right = 95.0
+margin_bottom = 172.0
+text = "Make Action"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="SelectFood" to="." method="_on_SelectFood_button_down"]
 [connection signal="pressed" from="GiveFood" to="." method="_on_GiveFood_pressed"]
+[connection signal="button_down" from="MakeAction" to="." method="_on_MakeAction_button_down"]

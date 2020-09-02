@@ -1,8 +1,18 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://Script/Food.gd" type="Script" id=1]
+[ext_resource path="res://Script/Action.gd" type="Script" id=2]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+name = "Action"
+hunger_cost = 20.0
+thirst_cost = 0.0
+fatigue_cost = 5.0
+hygiene_cost = 0.0
+happiness_cost = 0.0
 
 [resource]
 script = ExtResource( 1 )
 name = "Brownie"
-hunger_restored = 50.0
+action = SubResource( 1 )
