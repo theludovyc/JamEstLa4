@@ -49,7 +49,7 @@ __meta__ = {
 [node name="MakeAction" type="Button" parent="."]
 margin_left = 19.0
 margin_top = 152.0
-margin_right = 95.0
+margin_right = 110.0
 margin_bottom = 172.0
 text = "Make Action"
 __meta__ = {
