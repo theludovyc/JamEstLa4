@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ressources/sprites/garden/dirt.png" type="Texture" id=1]
 [ext_resource path="res://Script/garden/Plot.gd" type="Script" id=2]
 [ext_resource path="res://ressources/sprites/garden/effect_sprinkle.png" type="Texture" id=3]
 [ext_resource path="res://ressources/sprites/garden/effect_seeded.png" type="Texture" id=4]
+[ext_resource path="res://ressources/sprites/garden/plantations/carrot.png" type="Texture" id=5]
+[ext_resource path="res://ressources/sprites/garden/plantations/eggplant.png" type="Texture" id=6]
+[ext_resource path="res://ressources/sprites/garden/plantations/tomato.png" type="Texture" id=7]
+[ext_resource path="res://ressources/sprites/garden/plantations/laittuce.png" type="Texture" id=8]
+[ext_resource path="res://ressources/sprites/garden/plantations/turnip.png" type="Texture" id=9]
 
 [node name="Plot" type="Node2D"]
 script = ExtResource( 2 )
@@ -21,6 +26,39 @@ texture = ExtResource( 4 )
 visible = false
 texture = ExtResource( 3 )
 
+[node name="Plants" type="Node2D" parent="."]
+
+[node name="Carrot" type="Sprite" parent="Plants"]
+visible = false
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+
+[node name="Eggplant" type="Sprite" parent="Plants"]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 24 )
+
+[node name="Tomato" type="Sprite" parent="Plants"]
+visible = false
+position = Vector2( 0, -4 )
+texture = ExtResource( 7 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 24 )
+
+[node name="Laittuce" type="Sprite" parent="Plants"]
+visible = false
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 24, 24 )
+
+[node name="Turnip" type="Sprite" parent="Plants"]
+texture = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 24, 24 )
+
 [node name="PlotBtn" type="Button" parent="."]
 margin_left = -8.0
 margin_top = -8.0
@@ -28,6 +66,7 @@ margin_right = 24.0
 margin_bottom = 24.0
 rect_scale = Vector2( 0.5, 0.5 )
 focus_mode = 0
+action_mode = 0
 enabled_focus_mode = 0
 flat = true
 __meta__ = {
@@ -35,5 +74,9 @@ __meta__ = {
 }
 
 [node name="Evaporation" type="Timer" parent="."]
-[connection signal="button_down" from="PlotBtn" to="." method="watering"]
+
+[node name="Growing" type="Timer" parent="."]
+one_shot = true
+[connection signal="button_down" from="PlotBtn" to="." method="action_used"]
 [connection signal="timeout" from="Evaporation" to="." method="evaporation"]
+[connection signal="timeout" from="Growing" to="." method="growing"]
