@@ -8,6 +8,7 @@
 script = ExtResource( 1 )
 SeedName = "Carrot"
 GrowDuration = 20
-GrowSteps = 4
+GrowSteps = 3
 VegetableSprite = ExtResource( 3 )
 PlantSprite = ExtResource( 2 )
+GrowTotalTime = 600
