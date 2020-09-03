@@ -6,7 +6,7 @@ export (Array) var Seeds = []
 
 # Nodes
 onready var Interface = $Interface
-
+onready var SeedMenu = $Interface/SeedMenu
 # Actions
 var current_action: String = ""
 
@@ -71,3 +71,8 @@ func toggle_curent_action(action: String = ""):
 			child.get_node("Selected").visible = false
 	if action != "":
 		Interface.get_node(action).get_node("Selected").visible = true
+
+
+# Open the menu
+func open_menu():
+	SeedMenu.open()
