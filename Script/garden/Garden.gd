@@ -18,7 +18,9 @@ var water: int = 50 setget set_water
 var seed_type = load("res://Item/seeds/Carrot.tres") setget seed_type_changed
 var seed_max = 50
 var seed_count = 50 setget set_seed_count
-var inventory_seed_count = {"Carrot": 50, "Eggplant": 15, "Tomato": 25}
+var inventory_seed_count = {
+	"Carrot": 50, "Eggplant": 15, "Tomato": 25, "Laittuce": 14, "Turnip": 43
+}
 
 
 func _ready():

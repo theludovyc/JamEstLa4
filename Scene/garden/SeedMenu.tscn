@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://ressources/sprites/menu_box.png" type="Texture" id=1]
 [ext_resource path="res://ressources/sprites/close.png" type="Texture" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://ressources/sprites/inventory/carrot.png" type="Texture" id=8]
 [ext_resource path="res://ressources/sprites/inventory/eggplant.png" type="Texture" id=9]
 [ext_resource path="res://ressources/sprites/inventory/tomato.png" type="Texture" id=10]
+[ext_resource path="res://ressources/sprites/inventory/laittuce.png" type="Texture" id=11]
+[ext_resource path="res://ressources/sprites/inventory/turnip.png" type="Texture" id=12]
 
 [sub_resource type="Animation" id=1]
 resource_name = "close"
@@ -168,7 +170,7 @@ __meta__ = {
 }
 
 [node name="Inner" type="GridContainer" parent="Inner_box"]
-margin_right = 78.0
+margin_right = 134.0
 margin_bottom = 22.0
 custom_constants/vseparation = 6
 custom_constants/hseparation = 6
@@ -215,6 +217,32 @@ texture = ExtResource( 10 )
 centered = false
 offset = Vector2( 3, 3 )
 
+[node name="Laittuce" type="TextureButton" parent="Inner_box/Inner"]
+margin_left = 84.0
+margin_right = 106.0
+margin_bottom = 22.0
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 7 )
+texture_disabled = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Inner_box/Inner/Laittuce"]
+texture = ExtResource( 11 )
+centered = false
+offset = Vector2( 3, 3 )
+
+[node name="Turnip" type="TextureButton" parent="Inner_box/Inner"]
+margin_left = 112.0
+margin_right = 134.0
+margin_bottom = 22.0
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 7 )
+texture_disabled = ExtResource( 6 )
+
+[node name="Sprite" type="Sprite" parent="Inner_box/Inner/Turnip"]
+texture = ExtResource( 12 )
+centered = false
+offset = Vector2( 3, 3 )
+
 [node name="TextureButton" type="TextureButton" parent="."]
 margin_left = 228.0
 margin_top = 14.0
@@ -233,4 +261,6 @@ anims/open = SubResource( 2 )
 [connection signal="pressed" from="Inner_box/Inner/Carrot" to="." method="set_current_seed"]
 [connection signal="pressed" from="Inner_box/Inner/Eggplant" to="." method="set_current_seed"]
 [connection signal="pressed" from="Inner_box/Inner/Tomato" to="." method="set_current_seed"]
+[connection signal="pressed" from="Inner_box/Inner/Laittuce" to="." method="set_current_seed"]
+[connection signal="pressed" from="Inner_box/Inner/Turnip" to="." method="set_current_seed"]
 [connection signal="pressed" from="TextureButton" to="." method="close"]
