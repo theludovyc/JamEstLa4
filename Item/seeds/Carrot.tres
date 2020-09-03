@@ -1,9 +1,13 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://Script/garden/Seed.gd" type="Script" id=1]
+[ext_resource path="res://ressources/sprites/garden/plantations/carrot.png" type="Texture" id=2]
+[ext_resource path="res://ressources/sprites/inventory/carrot.png" type="Texture" id=3]
 
 [resource]
 script = ExtResource( 1 )
 SeedName = "Carrot"
 GrowDuration = 20
 GrowSteps = 4
+VegetableSprite = ExtResource( 3 )
+PlantSprite = ExtResource( 2 )

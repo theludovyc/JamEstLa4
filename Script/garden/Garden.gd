@@ -1,6 +1,7 @@
 extends Node2D
 
 export (int, 1, 99999999) var EvaporationTime = 600
+export (Array) var Seeds = []
 
 onready var Interface = $Interface
 
@@ -10,6 +11,10 @@ var current_action: String = ""
 
 var max_water: int = 50
 var water: int = 50
+
+var seed_type
+var seed_max = 50
+var seed_count = 15
 
 
 func _ready():
@@ -22,10 +27,17 @@ func _ready():
 func _process(_delta):
 	Interface.get_node("Watering").get_node("WaterLevel").value = water
 	Interface.get_node("Watering").get_node("Stat").text = str(water) + "/" + str(max_water)
+	Interface.get_node("Planting").get_node("SeedsLevel").value = seed_count
+	Interface.get_node("Planting").get_node("Stat").text = str(seed_count) + "/" + str(seed_max)
 
 
 func wateringcan_mode():
 	toggle_curent_action("Watering")
+
+
+func seed_select():
+	seed_type = Seeds[0]  # Temporary seed for test
+	toggle_curent_action("Planting")
 
 
 func toggle_curent_action(action: String = ""):
