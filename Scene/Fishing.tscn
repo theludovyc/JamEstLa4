@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Script/Fishing.gd" type="Script" id=1]
+
+[node name="Fishing" type="Node"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 36.0
+margin_top = 42.0
+margin_right = 76.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_left = 102.0
+margin_top = 42.0
+margin_right = 142.0
+margin_bottom = 82.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Catch" type="Button" parent="."]
+margin_left = 102.0
+margin_top = 102.0
+margin_right = 149.0
+margin_bottom = 122.0
+text = "Catch"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 37.0
+margin_top = 17.0
+margin_right = 134.0
+margin_bottom = 31.0
+text = "Fish may come"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Cast" type="Button" parent="."]
+margin_left = 39.0
+margin_top = 103.0
+margin_right = 78.0
+margin_bottom = 123.0
+text = "Cast"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="Catch" to="." method="_on_Catch_button_down"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="button_down" from="Cast" to="." method="_on_Cast_button_down"]
