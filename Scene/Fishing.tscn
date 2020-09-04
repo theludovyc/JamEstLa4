@@ -24,10 +24,10 @@ __meta__ = {
 }
 
 [node name="Catch" type="Button" parent="."]
-margin_left = 37.0
-margin_top = 96.0
-margin_right = 49.0
-margin_bottom = 116.0
+margin_left = 102.0
+margin_top = 102.0
+margin_right = 149.0
+margin_bottom = 122.0
 text = "Catch"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -45,5 +45,16 @@ __meta__ = {
 
 [node name="Timer" type="Timer" parent="."]
 one_shot = true
+
+[node name="Cast" type="Button" parent="."]
+margin_left = 39.0
+margin_top = 103.0
+margin_right = 78.0
+margin_bottom = 123.0
+text = "Cast"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="button_down" from="Catch" to="." method="_on_Catch_button_down"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="button_down" from="Cast" to="." method="_on_Cast_button_down"]

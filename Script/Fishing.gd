@@ -8,9 +8,9 @@ var status_string = ["Fish may come", "catch it!"]
 
 onready var timer = $Timer
 
-enum States{wait, catchit, catch}
+enum States{cast, wait, catchit, catch}
 
-var state = States.wait
+var state = States.cast
 
 var onCatch =  false
 
@@ -34,8 +34,6 @@ func resetTimer2():
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	resetCatchTimes()
-	
-	resetTimer0()
 	pass # Replace with function body.
 
 func reset():
@@ -46,18 +44,16 @@ func reset():
 		
 		onCatch = false
 	
-	state = States.wait
+	state = States.cast
+	
+	$Cast.disabled = false
 	
 	resetCatchTimes()
 	
-	resetTimer0()
-	
-	print("bouuuh !")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
 
 func _on_Timer_timeout():
 	match state:
@@ -73,6 +69,9 @@ func _on_Timer_timeout():
 			
 		States.catchit:
 			reset()
+			
+			print("bouuuh !")
+			
 	pass # Replace with function body.
 
 
@@ -94,9 +93,18 @@ func _on_Catch_button_down():
 				
 					resetTimer1()
 				else:
-					state = States.catch
+					reset()
 					
 					print("wouhou !")
 			else:
 				reset()
+	pass # Replace with function body.
+
+func _on_Cast_button_down():
+	if state == States.cast:
+		state = States.wait
+		
+		resetTimer0()
+		
+		$Cast.disabled = true
 	pass # Replace with function body.
