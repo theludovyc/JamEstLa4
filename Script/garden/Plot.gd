@@ -89,6 +89,9 @@ func watering():
 		Garden.water -= 1
 		Effect_Watered.visible = true
 		has_water = true
+	if Garden.water <= 0:
+		Garden.toggle_curent_action("")
+		Garden.can_fill = true
 
 
 # Planting seed in plot
