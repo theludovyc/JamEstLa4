@@ -54,6 +54,10 @@ config/name="JamEstLa4"
 run/main_scene="res://Scene/garden/Garden.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/fps/force_fps=60
+
 [display]
 
 window/size/width=256
